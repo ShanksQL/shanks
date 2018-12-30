@@ -1,0 +1,13 @@
+Click      ==  7.0
+Flask      ==  1.0.2
+Flask-Script == 2.0.6
+gunicorn     == 19.9.0
+itsdangerous == 1.1.0
+Jinja2       == 2.10
+MarkupSafe   == 1.1.0
+MySQL-python == 1.2.5
+pip          == 18.1
+setuptools   == 40.6.3
+SQLAlchemy   == 1.2.15
+Werkzeug     == 0.14.1
+wheel        == 0.32.3
