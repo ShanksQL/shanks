@@ -1,16 +1,8 @@
 # -*- coding: utf-8 -*-
 __author__ = "shanks"
 
-from flask import render_template
-from flask import Flask
+from apps import app
 from werkzeug.contrib.fixers import ProxyFix
-
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello_world():
-    return render_template("index.html")
 
 
 if __name__ == '__main__':
