@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = "shanks"
 from flask import Blueprint
-meet = Blueprint("user", __name__, url_prefix='/meet')
+meet = Blueprint("user", __name__)
 
 
 @meet.route("/")

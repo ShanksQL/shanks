@@ -3,7 +3,7 @@ __author__ = "shanks"
 
 from flask import Blueprint
 
-me = Blueprint("me", __name__, url_prefix='/right')
+me = Blueprint("me", __name__)
 
 
 @me.route("/")
