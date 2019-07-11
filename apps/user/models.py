@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 __author__ = "shanks"
 
+from db.base_model import BaseModel
 from sqlalchemy import Column, String, Integer, DateTime, Boolean
 
 # ========用户区域==========
 
 
-class User(object):
+class User(BaseModel):
     __table_name__ = 'user'
     name = Column(String(100), doc='姓名')
     mobile = Column(Integer, doc='手机号')
@@ -19,13 +20,13 @@ class User(object):
 
 # ========圈子区域==========
 
-class Circle(object):
+class Circle(BaseModel):
     __table_name__ = 'circle'
     name = Column(String(100), doc='圈子名称')
     describe = Column(String(1000), doc='圈子描述')
 
 
-class CircleNumber(object):
+class CircleNumber(BaseModel):
     __table_name__ = 'circle_number'
     category_id = Column(Integer, doc='圈子ID')
     user_id = Column(Integer, doc='成员ID')
@@ -35,7 +36,7 @@ class CircleNumber(object):
 
 # ========文件区域==========
 
-class Document(object):
+class Document(BaseModel):
     __table_name__ = 'document'
     index = Column(String(100), doc='文件索引')
     name = Column(String(100), doc='文件名')
