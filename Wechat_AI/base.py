@@ -5,7 +5,7 @@ __date__ = '2019/6/27 6:43 PM'
 
 import itchat
 from itchat.content import *
-from Wechat_AI.redis_server import RedisServer
+from .redis_server import RedisServer
 import time
 import logging
 from concurrent.futures import ThreadPoolExecutor
