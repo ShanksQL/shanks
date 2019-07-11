@@ -5,7 +5,7 @@ __date__ = '2019/6/27 6:43 PM'
 
 import itchat
 from itchat.content import *
-from .redis_server import RedisServer
+# from Wechat_AI.redis_server import RedisServer
 import time
 import logging
 from concurrent.futures import ThreadPoolExecutor
@@ -18,8 +18,8 @@ class Application(object):
     executor = ThreadPoolExecutor(max_workers=30)
 
     def __init__(self):
-
-        self.redis = None
+        pass
+        # self.redis = None
 
     @staticmethod
     def register_user():
@@ -32,7 +32,8 @@ class Application(object):
         print("=======>>>好友列表:{}".format(','.join([_a['NickName'] for _a in Application.user_dict.values()])))
 
     def init_redis(self):
-        self.redis = RedisServer()
+        pass
+        # self.redis = RedisServer()
 
     @staticmethod
     def loop_send():
